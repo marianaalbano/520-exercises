@@ -32,7 +32,7 @@ def recebe_funcao(nome):
     def acesso():
         global login
         if login:
-            return
+            return nome()
         else:
             print ("Você não tem acesso ao sistema")
             return sys.exit()
